@@ -1,7 +1,7 @@
 import GetRoomType from '../../util/GetRoomType';
 import {
     ROOM_TOWNCENTER, ROOM_FOREST, ROOM_BEACH, ROOM_DESERT, ROOM_MOUNTAIN,
-    ROOM_TUNDRA, ROOM_JUNGLE, ROOM_SWAMP, ROOM_OCEAN,
+    ROOM_TUNDRA, ROOM_JUNGLE, ROOM_SWAMP, ROOM_OCEAN
 } from '../../util/GetRoomType';
 
 const names = {

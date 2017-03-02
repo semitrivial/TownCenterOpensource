@@ -1,7 +1,8 @@
 import _ from 'lodash';
 import GetRoomType from '../../util/GetRoomType';
 import {
-    ROOM_TOWNCENTER, ROOM_FOREST, ROOM_BEACH, ROOM_DESERT, ROOM_MOUNTAIN
+    ROOM_TOWNCENTER, ROOM_FOREST, ROOM_BEACH, ROOM_DESERT, ROOM_MOUNTAIN,
+    ROOM_TUNDRA, ROOM_JUNGLE, ROOM_SWAMP, ROOM_OCEAN
 } from '../../util/GetRoomType';
 
 const forests = ['forests', 'woods',];
@@ -69,6 +70,33 @@ export default function MakeRoomDescription(r) {
         return `
             You're climbing the ${_.sample(mountains)} west of Town Center.
             ${_.sample(mountainEnemies)}.
+        `;
+    }
+
+    if ( roomType === ROOM_TUNDRA ) {
+        return `
+            You are trudging through an icy tundra.  The icy glare hurts your
+            eyes.
+        `;
+    }
+
+    if ( roomType === ROOM_SWAMP ) {
+        return `
+            You are waist-deep in a nasty swamp.  Mosquitos buzz around you.
+        `;
+    }
+
+    if ( roomType === ROOM_JUNGLE ) {
+        return `
+            You are hacking your way through an overgrown jungle.  Exotic
+            creatures rise up to kill you.
+        `;
+    }
+
+    if ( roomType === ROOM_OCEAN ) {
+        return `
+            You are swimming in the ocean.  It is deathly cold and your arms
+            are tired.
         `;
     }
 }
