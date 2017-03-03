@@ -13,3 +13,7 @@ import './help-suckitup';
 import './help-suicide';
 import './help-upgrade';
 import './help-combo';
+import './help-escape';
+import './help-recalc';
+import './help-cancel';
+import './help-save';
