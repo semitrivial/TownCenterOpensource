@@ -20,3 +20,4 @@ import './help-save';
 import './help-stats';
 import './help-socials';
 import './help-news';
+import './help-loot';
