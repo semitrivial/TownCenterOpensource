@@ -17,3 +17,6 @@ import './help-escape';
 import './help-recalc';
 import './help-cancel';
 import './help-save';
+import './help-stats';
+import './help-socials';
+import './help-news';
