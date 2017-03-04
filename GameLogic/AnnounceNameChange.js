@@ -1,4 +1,3 @@
-import React from 'react';
 import EchoRoom from '../../Rooms/EchoRoom';
 import ResendRoom from '../../Rooms/ResendRoom';
 import {logMsg} from '../../util/logger';
