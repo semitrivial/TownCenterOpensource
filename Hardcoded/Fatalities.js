@@ -41,7 +41,7 @@ const Fatalities = [
 
     `___ melts into a puddle of goo.`,
 
-    `___ sinks down straight to Hell!`,
+    `___ sinks straight down to Hell!`,
 
     `You suck out ___'s soul and devour it.`,
 
