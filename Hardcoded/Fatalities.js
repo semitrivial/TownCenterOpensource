@@ -1,113 +1,121 @@
+import {cachedPlayerName} from '../../Client/RefreshPlayerCache';
+
 const Fatalities = [
-    `___ collapses in a heap.`,
+    He => `${He} collapses in a heap.`,
 
-    `___ groans as his life drains away!`,
+    He => `${He} groans as his life drains away!`,
 
-    `___ clutches his stomach and keels over.`,
+    He => `${He} clutches his stomach and keels over.`,
 
-    `___ says 'No!  It cannot be!'`,
+    He => `${He} says 'No!  It cannot be!'`,
 
-    `___ stands still, then slowly falls in half.`,
+    He => `${He} stands still, then slowly falls in half.`,
 
-    `___ falls to his knees, killed in noble battle.`,
+    He => `${He} falls to his knees, killed in noble battle.`,
 
-    `___ says 'My son will avenge me!'`,
+    He => `${He} says 'My son will avenge me!'`,
 
-    `___ dies without taking his eyes off you.`,
+    He => `${He} dies without taking his eyes off you.`,
 
-    `___ splashes into a pool of his own blood!`,
+    He => `${He} splashes into a pool of his own blood!`,
 
-    `___ salutes you as rightful victor.`,
+    He => `${He} salutes you as rightful victor.`,
 
-    `___ blinks in confusion, sputters and dies.`,
+    He => `${He} blinks in confusion, sputters and dies.`,
 
-    `___ coughs and chokes.  'Curse you, ***!'`,
+    him => `You freeze ${him} into solid ice.`,
 
-    `You freeze ___ into solid ice.`,
+    him => `You shatter ${him} to pieces.`,
 
-    `You shatter ___ to pieces.`,
+    him => `You incinerate ${him}.`,
 
-    `You incinerate ___.`,
+    () => `You scatter the ashes.`,
 
-    `You scatter the ashes.`,
+    him => `You bury ${him} in a shallow grave.`,
 
-    `You bury ___ in a shallow grave.`,
+    He => `${He} flickers out (like in a video game).`,
 
-    `___ flickers out (like in a video game).`,
+    his => `You rip out ${his}'s heart and devour it!`,
 
-    `You rip out ___'s heart and devour it!`,
+    He => `${He} blows up in a huge explosion!`,
 
-    `___ blows up in a huge explosion!`,
+    He => `${He} melts into a puddle of goo.`,
 
-    `___ melts into a puddle of goo.`,
+    He => `${He} sinks straight down to Hell!`,
 
-    `___ sinks straight down to Hell!`,
+    his => `You suck out ${his}'s soul and devour it.`,
 
-    `You suck out ___'s soul and devour it.`,
+    () => `Somebody call a morgue.`,
 
-    `Looks like ___ messed with the wrong ***.`,
+    () => `Hasta la vista, baby.`,
 
-    `Somebody call a morgue.`,
+    () => `Nothing is left but a smouldering crater.`,
 
-    `Hasta la vista, baby.`,
+    () => `Nothing is left but a heap of ashes.`,
 
-    `Nothing is left but a smouldering crater.`,
+    () => `Rest In Peace.`,
 
-    `Nothing is left but a heap of ashes.`,
+    () => `Rest In Pieces.`,
 
-    `Rest In Peace.`,
+    () => `May God have mercy on his soul.`,
 
-    `Rest In Pieces.`,
+    He => `${He} screams "NOOOOOO!!!!!!"`,
 
-    `May God have mercy on his soul.`,
+    He => `${He} spins around three times and collapses.`,
 
-    `___ screams "NOOOOOO!!!!!!"`,
+    He => `${He} flies back and crashes into the wall.`,
 
-    `___ spins around three times and collapses.`,
+    () => `I hope he had life insurance.`,
 
-    `___ flies back and crashes into the wall.`,
+    He => `${He} struggles with the horror of his fate.`,
 
-    `I hope he had life insurance.`,
+    He => `${He} goes out kicking and screaming!`,
 
-    `___ struggles with the horror of his fate.`,
+    He => `${He} gasps as he sees his wounds.`,
 
-    `___ goes out kicking and screaming!`,
+    He => `${He} curses you with dying breath.`,
 
-    `___ gasps as he sees his wounds.`,
+    He => `${He} thanks you for a worthy fight.`,
 
-    `___ curses you with dying breath.`,
+    () => `So this is how it finally ends.`,
 
-    `___ thanks you for a worthy fight.`,
+    () => `One more notch in your belt.`,
 
-    `So this is how it finally ends.`,
+    () => `"He was a mighty man, now he fits in a tiny can."`,
 
-    `One more notch in your belt.`,
+    Kenny => `"Oh My God!  They killed ${Kenny}!"`,
 
-    `"He was a mighty man, now he fits in a tiny can."`,
+    he => `Looks like ${he} failed his saving throw vs. death ;)`,
 
-    `"Oh My God!  They killed ___!"`,
+    () => `All his children are now orphans.`,
 
-    `Looks like ___ failed his saving throw vs. death ;)`,
+    He => `${He} stumbles into a conveniently open grave.`,
 
-    `All his children are now orphans.`,
+    He => `${He} flops down like a pancake.`,
 
-    `___ stumbles into a conveniently open grave.`,
+    () => `One down, a million more to go.`,
 
-    `___ flops down like a pancake.`,
+    He => `${He} collapses like a pile of bricks.`,
 
-    `One down, a million more to go.`,
+    () => `Good night sweet prince.`,
 
-    `___ collapses like a pile of bricks.`,
+    He => `${He}'s mangled body hits the floor.`,
 
-    `Good night sweet prince.`,
+    him => `You banish ${him} to an alternate dimension.`,
 
-    `___'s mangled body hits the floor.`,
+    his => `Blood trickles down ${his}'s forehead.`,
 
-    `You banish ___ to an alternate dimension.`,
+    him => `You kick ${him} into a chasm.  "This is Sparta!"`,
 
-    `Blood trickles down ___'s forehead.`,
+    he => {
+        const player = cachedPlayerName();
+        return `Looks like ${he} messed with the wrong ${player}.`;
+    },
 
-    `You kick ___ into a chasm.  "This is Sparta!"`,
+    He => {
+        const player = cachedPlayerName();
+        return `${He} coughs and chokes.  'Curse you, ${player}!'`;
+    },
 ];
 
 export default Fatalities;
