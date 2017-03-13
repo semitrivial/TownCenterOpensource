@@ -1,5 +1,5 @@
 const HintBlurbs = [
-    'You can disable these hints with "[[hint off]]"',
+    'You can disable these hints with "[[hints off]]"',
 
     'For a full command list, type "[[commands]]"',
 
