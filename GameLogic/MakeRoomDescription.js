@@ -102,7 +102,7 @@ export default function MakeRoomDescription(r) {
     if ( roomType === ROOM_SWAMP ) {
         const nasty = ['nasty', 'smelly', 'moint, damp',];
         const mosquitos = [
-            'mosquitos', 'mosquitos', 'mosquitos', 'flies',
+            'Mosquitos', 'Mosquitos', 'Mosquitos', 'Flies',
         ];
         const buzz = [
             'buzz', 'buzz', 'buzz', 'swirl',
