@@ -20,8 +20,8 @@ AddHelp('statbonus', () =>
 
             <dt>Endurance</dt>
             <dd>
-                If the enemy has +X endurance, then it's like your own
-                attack stat was reduced by X.
+                If the enemy has +X endurance, then the enemy has that many
+                additional HP.
             </dd>
 
             <dt>Attack</dt>
