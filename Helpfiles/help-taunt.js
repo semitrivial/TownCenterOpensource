@@ -1,6 +1,7 @@
 import React from 'react';
 import AddHelp from './AddHelp';
-import CommandLink from '../Commands/CommandLink';
+import CommandLink from '../../Commands/CommandLink';
+
 
 AddHelp('taunt', () =>
     <div>
