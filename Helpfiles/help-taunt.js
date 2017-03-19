@@ -5,16 +5,16 @@ import CommandLink from '../../Commands/CommandLink';
 AddHelp('taunt', () =>
     <div>
         <p>
-            Q: What's better than an entire town trying to kill you?
+            Q: What's better than a town trying to kill you?
+            <br/>
+            A: A town REALLY trying to kill you!
         </p>
 
         <p>
-            A: An entire town REALLY REALLY trying to kill you!
-        </p>
-
-        <p>
-            Currently, <strong>taunt</strong> is still only partly
-            implemented.  At the moment, you can adjust your{' '}
+            <i className='fa fa-lightbulb-o'/> <strong>Taunt</strong> is
+            only partly implemented currently.
+            <br/>
+            You can adjust your{' '}
             <dfn>taunt level</dfn> using the{' '}
             <CommandLink cmd='taunt'/> command.  Type{' '}
             <CommandLink cmd='taunt 0'/> to reset it to the default
