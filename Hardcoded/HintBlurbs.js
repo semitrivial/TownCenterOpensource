@@ -10,6 +10,8 @@ const HintBlurbs = [
     'If things scroll by too fast, try scrolling up.',
 
     'To keep track of game development, see [[/news]].',
+
+    'For an FAQ, see [[/faq]].',
 ];
 
 export default HintBlurbs;
