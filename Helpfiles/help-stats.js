@@ -1,5 +1,4 @@
 import React from 'react';
-import {Table, Row} from 'react-bootstrap';
 import AddHelp from './AddHelp';
 
 AddHelp('stats', () => 
