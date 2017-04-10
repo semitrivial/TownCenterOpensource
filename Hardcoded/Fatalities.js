@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import {cachedPlayerName} from '../../Client/RefreshPlayerCache';
 
 const Fatalities = [
@@ -107,6 +108,12 @@ const Fatalities = [
 
     him => `You kick ${him} into a chasm.  "This is Sparta!"`,
 
+    He => `${He} goes out in a blaze of glory.`,
+
+    He => `${He} goes down like a lead balloon.`,
+
+    his => `You stuff ${his}'s head and mount it on your wall.`,
+
     he => {
         const player = cachedPlayerName();
         return `Looks like ${he} messed with the wrong ${player}.`;
@@ -115,6 +122,11 @@ const Fatalities = [
     He => {
         const player = cachedPlayerName();
         return `${He} coughs and chokes.  'Curse you, ${player}!'`;
+    },
+
+    He => {
+        const worm = _.sample(['worm', 'worm', 'grub', 'slug']);
+        return `${He} is reincarnated as a ${worm}.`;
     },
 ];
 
