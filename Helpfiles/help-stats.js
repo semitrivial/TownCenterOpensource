@@ -10,7 +10,7 @@ AddHelp('stats', () =>
             <dd>View attack/int/speed/endurance</dd>
 
             <dt>
-                stats <em>implant</em> (e.g. "stats regen")
+                stats <em>implant</em> (e.g. "stats magnet")
             </dt>
             <dd>Details about an implant type</dd> 
 
