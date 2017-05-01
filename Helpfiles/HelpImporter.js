@@ -22,4 +22,3 @@ import './help-socials';
 import './help-news';
 import './help-loot';
 import './help-playercount';
-import './help-taunt';
