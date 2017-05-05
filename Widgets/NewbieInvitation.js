@@ -9,12 +9,11 @@ export default function NewbieInvitation(props) {
             </strong>
             <br/>
             &raquo;<CommandLink
-                display='Rename to make permanent!'
+                display='Claim this character!'
                 cmd='name'
             />
             {' '}
             &raquo;Or <CommandLink display='Login' cmd='login'/> another
-            character.
             <br/>
         </div>
     );
