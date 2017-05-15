@@ -12,6 +12,10 @@ const HintBlurbs = [
     'To keep track of game development, see [[/news]].',
 
     'For an FAQ, see [[/faq]].',
+
+    'Need more Enemy Rage?  Increase HP to last longer.',
+
+    'Need more Heal Rate?  Taunt enemies so they hurt you more.',
 ];
 
 export default HintBlurbs;
